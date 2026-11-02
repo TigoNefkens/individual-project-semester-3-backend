@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-01-11T13:03:11.290Z" hostname="VICTORIUS" time="0.495">
+  <properties/>
+  <testcase name="createApplication_shouldThrowException_whenCreatorAppliesToOwnBand()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.422"/>
+  <testcase name="getApplicationsByBand_shouldReturnEmptyList_whenNoneExist()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.005"/>
+  <testcase name="denyApplication_shouldThrowException_whenNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.005"/>
+  <testcase name="getApplicationsByBand_shouldReturnApplications()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.006"/>
+  <testcase name="acceptApplication_shouldThrowException_whenApplicationNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.004"/>
+  <testcase name="createApplication_shouldThrowException_whenBandNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.003"/>
+  <testcase name="createApplication_shouldThrowException_whenUserAlreadyMember()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.006"/>
+  <testcase name="denyApplication_shouldDeleteApplication_whenFound()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.016"/>
+  <testcase name="acceptApplication_shouldAddUserToBand_whenNotMember()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.006"/>
+  <testcase name="createApplication_shouldThrowException_whenUserAlreadyApplied()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.004"/>
+  <testcase name="createApplication_shouldCreateApplication_whenValid()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.007"/>
+  <testcase name="acceptApplication_shouldOnlyDeleteApplication_whenUserAlreadyMember()" classname="nl.fontys.imp_stagescout.businessLogic.ApplicationServiceTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

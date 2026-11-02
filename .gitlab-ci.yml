@@ -1,0 +1,43 @@
+image: eclipse-temurin:21-jdk
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+  SONAR_TOKEN: $SONAR_TOKEN
+  GIT_DEPTH: 0
+
+stages:
+  - build
+  - test
+  - sonar
+  - dockerhub_image_push
+
+build:
+  stage: build
+  script:
+    - ./gradlew assemble
+
+test:
+  stage: test
+  script:
+    - ./gradlew clean test
+sonarqube:
+  stage: sonar
+  image: gradle:8-jdk17docker c
+  services:
+    - name: sonarqube:latest
+      alias: sonarqube
+  script:
+    - ./gradlew clean build
+    - ./gradlew sonarqube
+dockerhub_image_push:
+  stage: dockerhub_image_push
+  image: docker:24.0.5
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+  before_script:
+    - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  script:
+    - docker build -t kisatigo/victorious-backend:latest .
+    - docker push kisatigo/victorious-backend:latest

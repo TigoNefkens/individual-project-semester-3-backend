@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.fontys.imp_stagescout.controller.ApplicationControllerServiceIntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-01-11T13:03:12.976Z" hostname="VICTORIUS" time="0.587">
+  <properties/>
+  <testcase name="createApplication_shouldReturnSuccess()" classname="nl.fontys.imp_stagescout.controller.ApplicationControllerServiceIntegrationTest" time="0.587">
+    <failure message="java.lang.AssertionError: No value at JSON path &quot;$.data.content&quot;" type="java.lang.AssertionError">java.lang.AssertionError: No value at JSON path &quot;$.data.content&quot;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:351)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:148)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:112)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at nl.fontys.imp_stagescout.controller.ApplicationControllerServiceIntegrationTest.createApplication_shouldReturnSuccess(ApplicationControllerServiceIntegrationTest.java:76)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Missing property in path $['data']
+</failure>
+  </testcase>
+  <system-out><![CDATA[2026-01-11T14:03:12.257+01:00  INFO 26776 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [nl.fontys.imp_stagescout.controller.ApplicationControllerServiceIntegrationTest]: ApplicationControllerServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-11T14:03:12.316+01:00  INFO 26776 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration nl.fontys.imp_stagescout.ImpIndividualApplication for test class nl.fontys.imp_stagescout.controller.ApplicationControllerServiceIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-01-11T14:03:12.356+01:00  INFO 26776 --- [    Test worker] licationControllerServiceIntegrationTest : Starting ApplicationControllerServiceIntegrationTest using Java 21.0.8 with PID 26776 (started by tigon in C:\ICT Semester 3\Individual project\Final Project\individual-project-semester-3)
+2026-01-11T14:03:12.356+01:00  INFO 26776 --- [    Test worker] licationControllerServiceIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-01-11T14:03:12.897+01:00  INFO 26776 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-11T14:03:12.938+01:00  INFO 26776 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-01-11T14:03:12.938+01:00  INFO 26776 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-01-11T14:03:12.940+01:00  INFO 26776 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-01-11T14:03:12.968+01:00  INFO 26776 --- [    Test worker] licationControllerServiceIntegrationTest : Started ApplicationControllerServiceIntegrationTest in 0.648 seconds (process running for 10.391)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /applications
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Content-Length:"81"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = nl.fontys.imp_stagescout.controller.ApplicationController
+           Method = nl.fontys.imp_stagescout.controller.ApplicationController#addApplication(ApplicationDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"success":true,"errorCode":null,"message":null,"application":{"applicationId":null,"bandId":1,"applicantUserId":2,"content":"I want to join!"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /applications
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Content-Length:"81"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = nl.fontys.imp_stagescout.controller.ApplicationController
+           Method = nl.fontys.imp_stagescout.controller.ApplicationController#addApplication(ApplicationDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"success":true,"errorCode":null,"message":null,"application":{"applicationId":null,"bandId":1,"applicantUserId":2,"content":"I want to join!"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

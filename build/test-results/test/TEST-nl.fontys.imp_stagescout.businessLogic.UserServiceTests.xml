@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-01-11T13:03:11.843Z" hostname="VICTORIUS" time="0.402">
+  <properties/>
+  <testcase name="findByEmail_shouldReturnUser_whenUserExists()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.009"/>
+  <testcase name="login_shouldReturnNull_whenPasswordIsIncorrect()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.133"/>
+  <testcase name="addUser_shouldThrowException_whenEmailAndUsernameExist()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.003"/>
+  <testcase name="login_shouldReturnNull_whenUserNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.003"/>
+  <testcase name="getBandMembers_shouldReturnMemberDTOList()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.002"/>
+  <testcase name="addUser_shouldThrowException_whenSaveFails()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.058"/>
+  <testcase name="updateProfile_shouldThrowException_whenUserNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.003"/>
+  <testcase name="addUser_shouldThrowException_whenUsernameExists()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.004"/>
+  <testcase name="findCreatorByID_shouldThrowException_whenUserNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.002"/>
+  <testcase name="updateProfile_shouldUpdateUser_whenUserExists()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.001"/>
+  <testcase name="login_shouldReturnUser_whenCredentialsAreCorrect()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.113"/>
+  <testcase name="addUser_shouldSaveUser_whenValidInput()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.058"/>
+  <testcase name="findCreatorByID_shouldReturnMemberDTO_whenUserExists()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.002"/>
+  <testcase name="addUser_shouldThrowException_whenEmailExists()" classname="nl.fontys.imp_stagescout.businessLogic.UserServiceTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

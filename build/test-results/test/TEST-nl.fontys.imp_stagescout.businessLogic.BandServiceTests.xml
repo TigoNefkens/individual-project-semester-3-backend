@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-01-11T13:03:11.789Z" hostname="VICTORIUS" time="0.048">
+  <properties/>
+  <testcase name="getBandsForUser_shouldReturnEmptyList_whenUserNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.005"/>
+  <testcase name="getBandsByCreatorId_shouldReturnEmptyList_whenNoneFound()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.002"/>
+  <testcase name="addBand_shouldSaveBand_whenValidInput()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.003"/>
+  <testcase name="getAllBands_shouldReturnEmptyList_whenNoBandsExist()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.002"/>
+  <testcase name="updateBand_shouldUpdateBand_whenBandExists()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.013"/>
+  <testcase name="addBand_shouldThrowException_whenBandNameIsNull()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.002"/>
+  <testcase name="updateBand_shouldThrowException_whenBandNotFound()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.002"/>
+  <testcase name="addBand_shouldThrowException_whenBandNameIsBlank()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.007"/>
+  <testcase name="getBandsByCreatorId_shouldReturnBands()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.003"/>
+  <testcase name="getAllBands_shouldReturnBandDTOList()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.002"/>
+  <testcase name="getBandsForUser_shouldReturnBands_whenUserExists()" classname="nl.fontys.imp_stagescout.businessLogic.BandServiceTests" time="0.001"/>
+  <system-out><![CDATA[UpdateBandDTO(bandId=1, Largedescription=null, placeOfOperations=null, genre=Metal, bandConfig=null)
+Band(bandId=1, BandName=Old Name, creatorUserId=null, BandConfig=null, PlaceOfOperations=null, Genre=Metal, Description=null, Largedescription=null, users=null)
+UpdateBandDTO(bandId=1, Largedescription=null, placeOfOperations=null, genre=null, bandConfig=null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
